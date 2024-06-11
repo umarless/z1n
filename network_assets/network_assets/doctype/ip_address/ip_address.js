@@ -9,9 +9,7 @@ frappe.ui.form.on('IP Address', {
         var ip = frm.doc.address;
         ipv4 = regexipv4.test(ip)
         ipv6 = regexipv6.test(ip)
-        if ((ip && !ipv6)  (ip && !ipv4)) {
-            console.log(!ipv6)
-            console.log(!ipv4)
+        if ((ip && !ipv6) && (ip && !ipv4)) {
             frappe.msgprint(__('Enter correct IP Address'));
             frappe.validated = false;
         } 
