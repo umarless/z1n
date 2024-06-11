@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:site_name",
+ "creation": "2024-06-07 21:06:35.037041",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "site_name",
+  "site_address",
+  "title",
+  "column_break_efjm",
+  "site_additional_addresses",
+  "contacts"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "site_additional_addresses",
+   "fieldtype": "Table MultiSelect",
+   "label": "Site Additional Addresses",
+   "options": "Site Additional Addresses"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table MultiSelect",
+   "label": "Contacts",
+   "options": "Contacts"
+  },
+  {
+   "fieldname": "column_break_efjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 4,
+   "fieldname": "title",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 18:51:05.513585",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Site",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "site_address"
+}

@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 22:25:12.788635",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "domain",
+  "column_break_njnu",
+  "description",
+  "member_devices_section",
+  "region",
+  "site_group",
+  "column_break_yrjf",
+  "site",
+  "rack",
+  "section_break_yepx",
+  "table_nona"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Domain"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_njnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_devices_section",
+   "fieldtype": "Section Break",
+   "label": "Member Devices"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "U.S.\nCanada"
+  },
+  {
+   "fieldname": "site_group",
+   "fieldtype": "Link",
+   "label": "Site Group",
+   "options": "Network Site Group"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Network Site"
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Link",
+   "label": "Rack",
+   "options": "Network Rack"
+  },
+  {
+   "fieldname": "table_nona",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Members"
+  },
+  {
+   "fieldname": "column_break_yrjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yepx",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-07 22:33:25.916968",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Device Virtual Chassis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

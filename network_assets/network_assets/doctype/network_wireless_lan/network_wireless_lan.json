@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 17:01:43.784022",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ssid",
+  "group",
+  "column_break_mxvr",
+  "vlan",
+  "status",
+  "associations_section",
+  "customer_group",
+  "column_break_pcgh",
+  "customer",
+  "authentication_section",
+  "authtype",
+  "auth_cipher",
+  "column_break_obyr",
+  "pre_shared_key",
+  "section_break_gdeq",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "ssid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SSID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Network Wireless LAN Group"
+  },
+  {
+   "fieldname": "vlan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "VLAN",
+   "options": "VLAN"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nReservedDisabled, Deprecated"
+  },
+  {
+   "fieldname": "column_break_mxvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_pcgh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authentication_section",
+   "fieldtype": "Section Break",
+   "label": "Authentication"
+  },
+  {
+   "fieldname": "authtype",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "AuthType",
+   "options": "Open\nWEP\nWPA Personal (PSK)\nWPA Enterprise"
+  },
+  {
+   "fieldname": "auth_cipher",
+   "fieldtype": "Select",
+   "label": "Auth Cipher",
+   "options": "Auto\nTKIP\nAES"
+  },
+  {
+   "fieldname": "pre_shared_key",
+   "fieldtype": "Data",
+   "label": "Pre Shared Key"
+  },
+  {
+   "fieldname": "column_break_obyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gdeq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:58:02.429556",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Wireless LAN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 23:39:11.933867",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "rd",
+  "column_break_sfbc",
+  "enforce_unique_space",
+  "description",
+  "route_targets_section",
+  "import_targets",
+  "column_break_mjfm",
+  "export_targets",
+  "associations_section",
+  "customer",
+  "column_break_hybg",
+  "customer_group",
+  "section_break_bdyu",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "description": "Unique route distinguisher as defined in RFC 4364",
+   "fieldname": "rd",
+   "fieldtype": "Data",
+   "label": "RD"
+  },
+  {
+   "default": "0",
+   "description": "Prevent duplicate prefixes/IP addresses within this VRF",
+   "fieldname": "enforce_unique_space",
+   "fieldtype": "Check",
+   "label": "Enforce Unique Space"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_sfbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route_targets_section",
+   "fieldtype": "Section Break",
+   "label": "Route Targets"
+  },
+  {
+   "fieldname": "import_targets",
+   "fieldtype": "Table MultiSelect",
+   "label": "Import Targets",
+   "options": "IP Route Targets"
+  },
+  {
+   "fieldname": "column_break_mjfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "export_targets",
+   "fieldtype": "Table MultiSelect",
+   "label": "Export Targets",
+   "options": "IP Route Targets"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_hybg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bdyu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:43:31.205302",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "IP VRF",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,272 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 15:31:18.992765",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "device",
+  "module",
+  "name1",
+  "label",
+  "column_break_raoy",
+  "type",
+  "speed_kbps",
+  "duplex",
+  "description",
+  "addressing_section",
+  "mac_address",
+  "operation_section",
+  "virtual_device_contexts",
+  "mtu",
+  "column_break_enbs",
+  "transmit_power_dbm",
+  "enabled",
+  "management_only",
+  "related_interfaces_section",
+  "parent_interface",
+  "bridged_interface",
+  "column_break_jbrf",
+  "lag_interface",
+  "poe_section",
+  "poe_mode",
+  "column_break_kfsy",
+  "poe_type",
+  "8021q_switching_section",
+  "8021q_mode",
+  "wireless_section",
+  "wireless_role",
+  "column_break_jxbw",
+  "wireless_channel"
+ ],
+ "fields": [
+  {
+   "fieldname": "device",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Device",
+   "options": "Network Device",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "label": "Module",
+   "options": "Network Device Module"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Network Device Module Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "speed_kbps",
+   "fieldtype": "Data",
+   "label": "Speed (Kbps)"
+  },
+  {
+   "fieldname": "duplex",
+   "fieldtype": "Data",
+   "label": "Duplex"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_raoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addressing_section",
+   "fieldtype": "Section Break",
+   "label": "Addressing"
+  },
+  {
+   "fieldname": "mac_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MAC Address"
+  },
+  {
+   "fieldname": "operation_section",
+   "fieldtype": "Section Break",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "virtual_device_contexts",
+   "fieldtype": "Table MultiSelect",
+   "label": "Virtual Device Contexts",
+   "options": "Virtual Devices"
+  },
+  {
+   "fieldname": "mtu",
+   "fieldtype": "Int",
+   "label": "MTU"
+  },
+  {
+   "fieldname": "transmit_power_dbm",
+   "fieldtype": "Int",
+   "label": "Transmit Power (dBm)"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "0",
+   "description": "This interface is used only for out-of-band management",
+   "fieldname": "management_only",
+   "fieldtype": "Check",
+   "label": "Management Only"
+  },
+  {
+   "fieldname": "column_break_enbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "related_interfaces_section",
+   "fieldtype": "Section Break",
+   "label": "Related Interfaces"
+  },
+  {
+   "fieldname": "parent_interface",
+   "fieldtype": "Link",
+   "label": "Parent Interface",
+   "options": "Network Device Interface"
+  },
+  {
+   "fieldname": "bridged_interface",
+   "fieldtype": "Link",
+   "label": "Bridged Interface",
+   "options": "Network Device Interface"
+  },
+  {
+   "fieldname": "lag_interface",
+   "fieldtype": "Link",
+   "label": "LAG Interface",
+   "options": "Network Device Interface"
+  },
+  {
+   "fieldname": "column_break_jbrf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "poe_section",
+   "fieldtype": "Section Break",
+   "label": "PoE"
+  },
+  {
+   "fieldname": "poe_mode",
+   "fieldtype": "Select",
+   "label": "PoE Mode",
+   "options": "PD\nPSE"
+  },
+  {
+   "fieldname": "poe_type",
+   "fieldtype": "Select",
+   "label": "PoE Type",
+   "options": "802.3af (Type1)\n802.3at (Type 2)\n802.3bt (Type 3)\n802.3bt (Type 4)"
+  },
+  {
+   "fieldname": "column_break_kfsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "8021q_switching_section",
+   "fieldtype": "Section Break",
+   "label": "802.1Q Switching"
+  },
+  {
+   "fieldname": "8021q_mode",
+   "fieldtype": "Select",
+   "label": "802.1Q Mode",
+   "options": "Access\nTagged\nTagged (All)"
+  },
+  {
+   "fieldname": "wireless_section",
+   "fieldtype": "Section Break",
+   "label": "Wireless"
+  },
+  {
+   "fieldname": "wireless_role",
+   "fieldtype": "Select",
+   "label": "Wireless Role",
+   "options": "Access Point\nStation"
+  },
+  {
+   "fieldname": "wireless_channel",
+   "fieldtype": "Select",
+   "label": "Wireless Channel",
+   "options": "2.4 GHz Band Wi-Fi Channels\nChannel 1: 2.412 GHz\nChannel 2: 2.417 GHz\nChannel 3: 2.422 GHz\nChannel 4: 2.427 GHz\nChannel 5: 2.432 GHz\nChannel 6: 2.437 GHz\nChannel 7: 2.442 GHz\nChannel 8: 2.447 GHz\nChannel 9: 2.452 GHz\nChannel 10: 2.457 GHz\nChannel 11: 2.462 GHz\n5 GHz Band Wi-Fi Channels\nChannel 36: 5.180 GHz\nChannel 40: 5.200 GHz\nChannel 44: 5.220 GHz\nChannel 48: 5.240 GHz\nChannel 52: 5.260 GHz\nChannel 56: 5.280 GHz\nChannel 60: 5.300 GHz\nChannel 64: 5.320 GHz\nChannel 100: 5.500 GHz\nChannel 104: 5.520 GHz\nChannel 108: 5.540 GHz\nChannel 112: 5.560 GHz\nChannel 116: 5.580 GHz\nChannel 120: 5.600 GHz\nChannel 124: 5.620 GHz\nChannel 128: 5.640 GHz\nChannel 132: 5.660 GHz\nChannel 136: 5.680 GHz\nChannel 140: 5.700 GHz\nChannel 144: 5.720 GHz\nChannel 149: 5.745 GHz\nChannel 153: 5.765 GHz\nChannel 157: 5.785 GHz\nChannel 161: 5.805 GHz\nChannel 165: 5.825 GHz"
+  },
+  {
+   "fieldname": "column_break_jxbw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:44:30.008044",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Device Interface",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

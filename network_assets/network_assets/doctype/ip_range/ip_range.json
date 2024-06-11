@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 17:34:26.360538",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vrf",
+  "start_address",
+  "end_address",
+  "column_break_knvs",
+  "role",
+  "status",
+  "description",
+  "associations_section",
+  "customer_group",
+  "column_break_nfri",
+  "customer",
+  "section_break_dish",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "vrf",
+   "fieldtype": "Link",
+   "label": "VRF",
+   "options": "IP VRF"
+  },
+  {
+   "description": "IPv4 or IPv6 address (with mask)",
+   "fieldname": "start_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Start Address",
+   "reqd": 1
+  },
+  {
+   "description": "IPv4 or IPv6 address (with mask)",
+   "fieldname": "end_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "End Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Network Element Role"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nReserved\nDeprecated"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_knvs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_nfri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dish",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:57:36.668178",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "IP Range",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

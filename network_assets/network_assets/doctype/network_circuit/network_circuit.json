@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 19:16:13.677781",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "provider",
+  "provider_account",
+  "circuit_id",
+  "column_break_dewk",
+  "type",
+  "status",
+  "description",
+  "service_parameters_section",
+  "installed",
+  "terminates",
+  "column_break_exjy",
+  "commit_rate_kbps",
+  "section_break_bpej",
+  "customer",
+  "column_break_rmeq",
+  "customer_group",
+  "section_break_ikrh",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "Network Circuit Provider"
+  },
+  {
+   "fieldname": "provider_account",
+   "fieldtype": "Link",
+   "label": "Provider Account",
+   "options": "Network Circuit Provider Account"
+  },
+  {
+   "fieldname": "circuit_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Circuit ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Network Circuit Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nProvisioning\nActive\nOffline\nDeprovisioning\nDecommissioned"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_dewk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Service Parameters"
+  },
+  {
+   "fieldname": "installed",
+   "fieldtype": "Date",
+   "label": "Installed"
+  },
+  {
+   "fieldname": "terminates",
+   "fieldtype": "Date",
+   "label": "Terminates"
+  },
+  {
+   "fieldname": "commit_rate_kbps",
+   "fieldtype": "Int",
+   "label": "Commit Rate (Kbps)"
+  },
+  {
+   "fieldname": "column_break_exjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bpej",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_rmeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ikrh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:39:46.624309",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Circuit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Network Asset User"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 21:47:56.348464",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "manufacturer",
+  "model",
+  "column_break_ksmw",
+  "default_platform",
+  "description",
+  "chassis_section",
+  "height_u",
+  "part_number",
+  "parentchild_status",
+  "column_break_vzik",
+  "airflow",
+  "weight",
+  "weight_unit",
+  "images_section",
+  "front_image",
+  "column_break_lngc",
+  "rear_image",
+  "section_break_ijmh",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manufacturer",
+   "options": "Manufacturer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_platform",
+   "fieldtype": "Link",
+   "label": "Default Platform",
+   "options": "Network Device Platform"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_ksmw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chassis_section",
+   "fieldtype": "Section Break",
+   "label": "Chassis"
+  },
+  {
+   "default": "1",
+   "fieldname": "height_u",
+   "fieldtype": "Float",
+   "label": "Height (U)",
+   "non_negative": 1,
+   "precision": "1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "part_number",
+   "fieldtype": "Data",
+   "label": "Part Number"
+  },
+  {
+   "fieldname": "parentchild_status",
+   "fieldtype": "Select",
+   "label": "Parent/Child Status",
+   "options": "Parent\nChild"
+  },
+  {
+   "fieldname": "airflow",
+   "fieldtype": "Select",
+   "label": "Airflow",
+   "options": "Front to Rear\nRear to Front\nLeft to Right, Right to Left, Side to Rear"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Weight "
+  },
+  {
+   "fieldname": "weight_unit",
+   "fieldtype": "Select",
+   "label": "Weight Unit",
+   "options": "Kilograms\nGrams\nPounds\nOunces"
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "front_image",
+   "fieldtype": "Image",
+   "label": "Front Image"
+  },
+  {
+   "fieldname": "rear_image",
+   "fieldtype": "Image",
+   "label": "Rear Image"
+  },
+  {
+   "fieldname": "column_break_lngc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vzik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ijmh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 17:06:55.736465",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Device Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

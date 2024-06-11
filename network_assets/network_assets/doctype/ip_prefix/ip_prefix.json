@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 17:44:38.048892",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prefix",
+  "status",
+  "vrf",
+  "column_break_svdk",
+  "role",
+  "is_a_pool",
+  "mark_utilized",
+  "description",
+  "sitevlan_management_section",
+  "site",
+  "column_break_xjwk",
+  "link_sxen",
+  "associations_section",
+  "customer_group",
+  "column_break_njyv",
+  "customer",
+  "section_break_setk",
+  "comments"
+ ],
+ "fields": [
+  {
+   "description": "IPv4 or IPv6 network with mask",
+   "fieldname": "prefix",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Prefix",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Container\nActive\nReserved\nDeprecated",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vrf",
+   "fieldtype": "Link",
+   "label": "VRF",
+   "options": "IP VRF"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Network Element Role"
+  },
+  {
+   "fieldname": "column_break_svdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "All IP addresses within this prefix are considered usable",
+   "fieldname": "is_a_pool",
+   "fieldtype": "Check",
+   "label": "Is a pool"
+  },
+  {
+   "default": "0",
+   "description": "Treat as 100% Utilized",
+   "fieldname": "mark_utilized",
+   "fieldtype": "Check",
+   "label": "Mark Utilized"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sitevlan_management_section",
+   "fieldtype": "Section Break",
+   "label": "Site/VLAN Management"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Network Site"
+  },
+  {
+   "fieldname": "link_sxen",
+   "fieldtype": "Link",
+   "options": "VLAN"
+  },
+  {
+   "fieldname": "column_break_xjwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_njyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_setk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:57:09.790589",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "IP Prefix",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

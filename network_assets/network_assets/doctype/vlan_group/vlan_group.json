@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 17:20:10.223822",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "child_vlans_section",
+  "minimum_vlan_id",
+  "column_break_brwd",
+  "maximum_vlan_id",
+  "scope_section",
+  "select_eplj"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "child_vlans_section",
+   "fieldtype": "Section Break",
+   "label": "Child VLANs"
+  },
+  {
+   "fieldname": "minimum_vlan_id",
+   "fieldtype": "Int",
+   "label": "Minimum VLAN ID"
+  },
+  {
+   "fieldname": "maximum_vlan_id",
+   "fieldtype": "Int",
+   "label": "Maximum VLAN ID"
+  },
+  {
+   "fieldname": "column_break_brwd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope_section",
+   "fieldtype": "Section Break",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "select_eplj",
+   "fieldtype": "Select",
+   "label": "Scope Type",
+   "options": "DCIM > Location\nDCIM > Rack\nDCIM > Region\nDCIM > Site\nDCIM > Site Group Virtualization > Cluster Virtualization > Cluster Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:58:55.206704",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "VLAN Group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

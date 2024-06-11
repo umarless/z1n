@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 18:18:53.447599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prefix",
+  "rir",
+  "column_break_sxlj",
+  "date_added",
+  "description",
+  "associations_section",
+  "customer_group",
+  "column_break_qfnd",
+  "customer",
+  "section_break_kirh",
+  "long_text_pasu"
+ ],
+ "fields": [
+  {
+   "description": "An IPv4 or IPv6 network",
+   "fieldname": "prefix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prefix",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rir",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "RIR",
+   "options": "IP RIR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_added",
+   "fieldtype": "Date",
+   "label": "Date Added"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_qfnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kirh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "long_text_pasu",
+   "fieldtype": "Long Text"
+  },
+  {
+   "fieldname": "column_break_sxlj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:51:54.643451",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "IP Aggregate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

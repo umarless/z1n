@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:address",
+ "creation": "2024-06-07 23:32:23.071634",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "address",
+  "status",
+  "role",
+  "column_break_wavf",
+  "vrf",
+  "dns_name",
+  "description",
+  "associations_section",
+  "customer",
+  "column_break_hpfk",
+  "customer_group",
+  "interface_assignment_section",
+  "interface_parent",
+  "interface",
+  "column_break_qdkt",
+  "make_this_the_primary_ip_for_the_device",
+  "nat_ip",
+  "section_break_kscw",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nReserved\nDeprecated\nDHCP\nSLAAC"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Loopback\nSecondary\nAnycast\nVIP\nVRRP"
+  },
+  {
+   "fieldname": "vrf",
+   "fieldtype": "Link",
+   "label": "VRF",
+   "options": "IP VRF"
+  },
+  {
+   "description": "Hostname or FQDN",
+   "fieldname": "dns_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DNS Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_wavf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_hpfk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interface_assignment_section",
+   "fieldtype": "Section Break",
+   "label": "Interface Assignment"
+  },
+  {
+   "fieldname": "interface_parent",
+   "fieldtype": "Link",
+   "label": "Interface Parent",
+   "options": "Interface Parent"
+  },
+  {
+   "fieldname": "interface",
+   "fieldtype": "Data",
+   "label": "Interface"
+  },
+  {
+   "default": "0",
+   "fieldname": "make_this_the_primary_ip_for_the_device",
+   "fieldtype": "Check",
+   "label": "Make this the primary IP for the Device"
+  },
+  {
+   "fieldname": "nat_ip",
+   "fieldtype": "Link",
+   "label": "NAT IP",
+   "options": "IP Address"
+  },
+  {
+   "fieldname": "section_break_kscw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "column_break_qdkt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:34:38.379856",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "IP Address",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Network Asset User"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

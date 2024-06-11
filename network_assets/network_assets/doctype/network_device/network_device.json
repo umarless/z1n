@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 21:42:08.129728",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "device_role",
+  "description",
+  "hardware_section",
+  "device_type",
+  "airflow",
+  "serial_number",
+  "asset_tag",
+  "column_break_yztr",
+  "site",
+  "location",
+  "rack",
+  "rack_face",
+  "management_section",
+  "status",
+  "column_break_qxoz",
+  "platform",
+  "virtualization_section",
+  "cluster",
+  "associations_section",
+  "customer",
+  "column_break_tmiq",
+  "customer_group",
+  "virtual_chassis_section",
+  "virtual_chassis",
+  "priority",
+  "section_break_ctix",
+  "supplier",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "device_role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Device Role",
+   "options": "Network Device Role",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "hardware_section",
+   "fieldtype": "Section Break",
+   "label": "Hardware"
+  },
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Link",
+   "label": "Device Type",
+   "options": "Network Device Type"
+  },
+  {
+   "fetch_from": "device_type.airflow",
+   "fieldname": "airflow",
+   "fieldtype": "Date",
+   "label": "Airflow"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "asset_tag",
+   "fieldtype": "Data",
+   "label": "Asset Tag"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site",
+   "options": "Network Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Link",
+   "label": "Rack",
+   "options": "Network Rack"
+  },
+  {
+   "fieldname": "rack_face",
+   "fieldtype": "Select",
+   "label": "Rack Face",
+   "options": "Front\nRear"
+  },
+  {
+   "fieldname": "column_break_yztr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "management_section",
+   "fieldtype": "Section Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOffline\nPlanned\nStaged\nFailed\nInventory"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Link",
+   "label": "Platform",
+   "options": "Network Device Platform"
+  },
+  {
+   "fieldname": "column_break_qxoz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "virtualization_section",
+   "fieldtype": "Section Break",
+   "label": "Virtualization"
+  },
+  {
+   "fieldname": "cluster",
+   "fieldtype": "Link",
+   "label": "Cluster",
+   "options": "Network Cluster"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Associations"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_tmiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "virtual_chassis_section",
+   "fieldtype": "Section Break",
+   "label": "Virtual Chassis"
+  },
+  {
+   "fieldname": "virtual_chassis",
+   "fieldtype": "Link",
+   "label": "Virtual Chassis",
+   "options": "Network Device Virtual Chassis"
+  },
+  {
+   "description": "The priority of the device in the Virtual Chassis",
+   "fieldname": "priority",
+   "fieldtype": "Int",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "section_break_ctix",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 17:04:09.123628",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

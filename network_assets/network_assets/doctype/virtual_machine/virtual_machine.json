@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 18:24:03.224326",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "role",
+  "column_break_ryit",
+  "status",
+  "description",
+  "associations_section",
+  "site",
+  "cluster",
+  "column_break_tach",
+  "device",
+  "section_break_tfxf",
+  "customer_group",
+  "column_break_tzdm",
+  "customer",
+  "management_section",
+  "platform",
+  "primary_ipv4",
+  "column_break_ildx",
+  "primary_ipv6",
+  "resources_section",
+  "vcpus",
+  "memory_mb",
+  "column_break_xail",
+  "disk_gb",
+  "section_break_bfex",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "Hypervisor\nLogging\nMainframe\nSecurity Appliance\nStorage\nSwitch"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Offline\nActive\nPlanned\nStaged\nFailed\nDecommissioning"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_ryit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "associations_section",
+   "fieldtype": "Section Break",
+   "label": "Site / Cluster"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "section_break_bfex",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  },
+  {
+   "description": "Optionally associated this VM to a specific host device within the cluster",
+   "fieldname": "device",
+   "fieldtype": "Link",
+   "label": "Device",
+   "options": "Network Device"
+  },
+  {
+   "fieldname": "column_break_tach",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Network Site"
+  },
+  {
+   "fieldname": "cluster",
+   "fieldtype": "Link",
+   "label": "Cluster",
+   "options": "Network Cluster"
+  },
+  {
+   "fieldname": "section_break_tfxf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tzdm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "management_section",
+   "fieldtype": "Section Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Link",
+   "label": "Platform",
+   "options": "Network Device Platform"
+  },
+  {
+   "fieldname": "primary_ipv4",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Primary IPv4",
+   "options": "IP Address"
+  },
+  {
+   "fieldname": "primary_ipv6",
+   "fieldtype": "Link",
+   "label": "Primary IPv6",
+   "options": "IP Address"
+  },
+  {
+   "fieldname": "column_break_ildx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resources_section",
+   "fieldtype": "Section Break",
+   "label": "Resources"
+  },
+  {
+   "fieldname": "vcpus",
+   "fieldtype": "Int",
+   "label": "vCPUs"
+  },
+  {
+   "fieldname": "memory_mb",
+   "fieldtype": "Int",
+   "label": "Memory (MB)"
+  },
+  {
+   "fieldname": "disk_gb",
+   "fieldtype": "Int",
+   "label": "Disk (GB)"
+  },
+  {
+   "fieldname": "column_break_xail",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:51:16.173131",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Virtual Machine",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

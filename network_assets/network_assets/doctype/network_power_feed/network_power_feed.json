@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 20:49:03.210282",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "power_panel",
+  "rack",
+  "name1",
+  "column_break_bjqo",
+  "status",
+  "type",
+  "description",
+  "characteristics_section",
+  "supply",
+  "voltage",
+  "amperage",
+  "column_break_cxjh",
+  "select_jrvw",
+  "maximum_utilization",
+  "section_break_cmem",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "power_panel",
+   "fieldtype": "Link",
+   "label": "Power Panel",
+   "options": "Network Power Panel"
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Link",
+   "label": "Rack",
+   "options": "Network Rack"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Offline\nActive\nPlanned\nFailed"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Primary\nRedundant"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_bjqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "characteristics_section",
+   "fieldtype": "Section Break",
+   "label": "Characteristics"
+  },
+  {
+   "fieldname": "supply",
+   "fieldtype": "Select",
+   "label": "Supply",
+   "options": "AC\nDC"
+  },
+  {
+   "default": "120",
+   "fieldname": "voltage",
+   "fieldtype": "Int",
+   "label": "Voltage"
+  },
+  {
+   "default": "15",
+   "fieldname": "amperage",
+   "fieldtype": "Int",
+   "label": "Amperage"
+  },
+  {
+   "fieldname": "select_jrvw",
+   "fieldtype": "Select",
+   "label": "Phase",
+   "options": "Single-phase\nThree-phase"
+  },
+  {
+   "default": "80",
+   "description": "Maximum permissible draw (percentage)",
+   "fieldname": "maximum_utilization",
+   "fieldtype": "Int",
+   "label": "Maximum Utilization"
+  },
+  {
+   "fieldname": "column_break_cxjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cmem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:46:24.157200",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Network Power Feed",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

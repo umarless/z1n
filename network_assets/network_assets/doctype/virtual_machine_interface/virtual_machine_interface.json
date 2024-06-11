@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 19:01:55.890556",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "virtual_machine",
+  "name1",
+  "column_break_jzdo",
+  "description",
+  "addressing_section",
+  "vrf",
+  "column_break_rpdg",
+  "mac_address",
+  "operation_section",
+  "mtu",
+  "column_break_sbaf",
+  "enabled",
+  "related_interface_section",
+  "parent_interface",
+  "column_break_zlcu",
+  "bridged_interface",
+  "8021q_switching_section",
+  "8021q_mode"
+ ],
+ "fields": [
+  {
+   "fieldname": "virtual_machine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Virtual Machine",
+   "options": "Virtual Machine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_jzdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addressing_section",
+   "fieldtype": "Section Break",
+   "label": "Addressing"
+  },
+  {
+   "fieldname": "vrf",
+   "fieldtype": "Link",
+   "label": "VRF",
+   "options": "IP VRF"
+  },
+  {
+   "fieldname": "mac_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MAC Address"
+  },
+  {
+   "fieldname": "column_break_rpdg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_section",
+   "fieldtype": "Section Break",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "mtu",
+   "fieldtype": "Int",
+   "label": "MTU"
+  },
+  {
+   "fieldname": "column_break_sbaf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "related_interface_section",
+   "fieldtype": "Section Break",
+   "label": "Related Interface"
+  },
+  {
+   "fieldname": "parent_interface",
+   "fieldtype": "Link",
+   "label": "Parent Interface",
+   "options": "Virtual Machine Interface"
+  },
+  {
+   "fieldname": "column_break_zlcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bridged_interface",
+   "fieldtype": "Link",
+   "label": "Bridged Interface",
+   "options": "Virtual Machine Interface"
+  },
+  {
+   "fieldname": "8021q_switching_section",
+   "fieldtype": "Section Break",
+   "label": "802.1Q Switching"
+  },
+  {
+   "fieldname": "8021q_mode",
+   "fieldtype": "Select",
+   "label": "802.1Q Mode",
+   "options": "Access\nTagged\nTagged (All)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:50:46.423239",
+ "modified_by": "Administrator",
+ "module": "Network Assets",
+ "name": "Virtual Machine Interface",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Network Asset User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
