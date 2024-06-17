@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Network Assets\"}}]",
+ "content": "[{\"id\":\"ABIUr7S64d\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Network Assets</span>\",\"col\":12}},{\"id\":\"L9gs_nZ8JR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Site\",\"col\":3}},{\"id\":\"rcjvEHLSMJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Site Location\",\"col\":3}},{\"id\":\"ugFocg77_l\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Devices</b></span>\",\"col\":12}},{\"id\":\"2UmFr13wZb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Device\",\"col\":3}},{\"id\":\"lm9pk5g2P3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Virtual Machine\",\"col\":3}},{\"id\":\"22DlGNvTjH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Virtual Chassis\",\"col\":3}},{\"id\":\"s809_jI5HE\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>IPAM</b></span>\",\"col\":12}},{\"id\":\"i4RznP9eKt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP Address\",\"col\":3}},{\"id\":\"1XGuOSIFyd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP Range\",\"col\":3}},{\"id\":\"4p5ooDcqjq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP Prefix\",\"col\":3}},{\"id\":\"7jAny75tFG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP ASN\",\"col\":3}},{\"id\":\"WbxvRlnnuy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP Aggregate\",\"col\":3}},{\"id\":\"cBcfEiXPk4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP RIR\",\"col\":3}},{\"id\":\"siJanReQfJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP VRF\",\"col\":3}},{\"id\":\"wDiYmMUfrQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IP Route Target\",\"col\":3}},{\"id\":\"AbZoJMcAgN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Wireless</b><b></b></span>\",\"col\":12}},{\"id\":\"Hnykm3mPkJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Wireless LAN\",\"col\":3}},{\"id\":\"757TTeKfj8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Clusters</b><b></b></span>\",\"col\":12}},{\"id\":\"p8qYgu1u9Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Cluster\",\"col\":3}},{\"id\":\"lRV1k37zwH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Cluster Group\",\"col\":3}},{\"id\":\"T7IA2GfRB9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Circuits</b><b></b></span>\",\"col\":12}},{\"id\":\"ZL_8ea_PLb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Circuit\",\"col\":3}},{\"id\":\"eNvicleNi3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Network Circuit Provider\",\"col\":3}}]",
  "creation": "2024-06-17 19:33:51.163934",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Network Assets",
  "links": [],
- "modified": "2024-06-17 19:34:18.322178",
+ "modified": "2024-06-17 20:11:52.085403",
  "modified_by": "Administrator",
  "module": "Network Assets",
  "name": "Network Assets",
@@ -23,7 +23,152 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 28.0,
- "shortcuts": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Network Site",
+   "link_to": "Network Site",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "IP ASN",
+   "link_to": "IP ASN",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "IP Aggregate",
+   "link_to": "IP Aggregate",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Network Wireless LAN",
+   "link_to": "Network Wireless LAN",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Network Circuit",
+   "link_to": "Network Circuit",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Network Device",
+   "link_to": "Network Device",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "IP RIR",
+   "link_to": "IP RIR",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Network Cluster",
+   "link_to": "Network Cluster",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Network Circuit Provider",
+   "link_to": "Network Circuit Provider",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "IP Address",
+   "link_to": "IP Address",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "IP VRF",
+   "link_to": "IP VRF",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Network Cluster Group",
+   "link_to": "Network Cluster Group",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Network Site Location",
+   "link_to": "Network Site Location",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "IP Route Target",
+   "link_to": "IP Route Target",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Virtual Machine",
+   "link_to": "Virtual Machine",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "IP Range",
+   "link_to": "IP Range",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Virtual Chassis",
+   "link_to": "Network Device Virtual Chassis",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "IP Prefix",
+   "link_to": "IP Prefix",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "Network Assets"
 }
