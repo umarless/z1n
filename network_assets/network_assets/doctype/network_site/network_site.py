@@ -8,4 +8,13 @@ from frappe.model.document import Document
 class NetworkSite(Document):
 	def before_save(self):
 		line1, line2, city, state = frappe.db.get_value('Address', self.site_address, ['address_line1', 'address_line2', 'city', 'state'])
-		self.title = line1 + ", " + line2 +", "+ city + ", "+ state
+		if line2:
+			if state:
+				self.title = line1 + ", " + line2 +", "+ city + ", "+ state
+			else:
+				self.title = line1 + ", " + line2 +", "+ city
+		else:
+			if state:
+				self.title = line1 +", "+ city + ", "+ state
+			else:
+				self.title = line1 +", "+ city

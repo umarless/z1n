@@ -5,17 +5,26 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_bkgu"
+  "name1",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "section_break_bkgu",
-   "fieldtype": "Section Break"
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-10 17:06:16.725401",
+ "modified": "2024-06-20 11:46:13.594840",
  "modified_by": "Administrator",
  "module": "Network Assets",
  "name": "Network Cluster Type",

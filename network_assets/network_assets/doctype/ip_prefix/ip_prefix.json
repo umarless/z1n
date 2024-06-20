@@ -91,6 +91,7 @@
   {
    "fieldname": "link_sxen",
    "fieldtype": "Link",
+   "label": "VLAN",
    "options": "VLAN"
   },
   {
@@ -130,7 +131,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-10 16:57:09.790589",
+ "modified": "2024-06-20 11:21:14.210811",
  "modified_by": "Administrator",
  "module": "Network Assets",
  "name": "IP Prefix",
