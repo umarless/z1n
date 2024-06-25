@@ -17,9 +17,9 @@
   "customer",
   "assignment_section",
   "vlan_parent",
-  "site",
   "column_break_afds",
   "vlan_group",
+  "site",
   "section_break_grqg",
   "comments"
  ],
@@ -48,6 +48,7 @@
   {
    "fieldname": "role",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Role",
    "options": "Network Element Role"
   },
@@ -93,12 +94,14 @@
    "options": "VLAN Group\nSite"
   },
   {
+   "depends_on": "eval:doc.vlan_parent == \"VLAN Group\"",
    "fieldname": "vlan_group",
    "fieldtype": "Link",
    "label": "VLAN Group",
    "options": "VLAN Group"
   },
   {
+   "depends_on": "eval:doc.vlan_parent == \"Site\"",
    "fieldname": "site",
    "fieldtype": "Link",
    "label": "Site",
@@ -120,7 +123,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-10 16:58:35.266901",
+ "modified": "2024-06-25 23:38:22.060914",
  "modified_by": "Administrator",
  "module": "Network Assets",
  "name": "VLAN",

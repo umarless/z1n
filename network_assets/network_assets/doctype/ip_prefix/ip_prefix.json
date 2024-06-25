@@ -34,11 +34,12 @@
    "reqd": 1
   },
   {
+   "default": "Active",
    "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Container\nActive\nReserved\nDeprecated",
+   "options": "Active\nContainer\nReserved\nDeprecated",
    "reqd": 1
   },
   {
@@ -131,7 +132,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-20 11:21:14.210811",
+ "modified": "2024-06-25 22:56:46.868745",
  "modified_by": "Administrator",
  "module": "Network Assets",
  "name": "IP Prefix",
